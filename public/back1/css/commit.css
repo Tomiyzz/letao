@@ -1,0 +1,141 @@
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a:link,
+a:visited,
+a:hover,
+a:active{
+  text-decoration: none;
+}
+.table.table-bordered th,
+.table.table-bordered td{
+  text-align: center;
+  vertical-align: middle;
+}
+.body_bg{
+  background-color: #222D32;
+}
+
+.mt-150{
+  margin-top: 150px;
+}
+
+.panel-title{
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+/* index部分 */
+.lt_aside{
+  background-color: #222D32;
+  position: fixed;
+  width: 180px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  transition: all 1s;
+}
+.lt_aside.hidemenu {
+  left: -180px;
+}
+.lt_aside .brand{
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #367FA9;
+}
+.lt_aside .brand a{
+  color: #fff;
+  font-size: 22px;
+}
+
+/* user */
+.lt_aside .user{
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  padding-top: 20px;
+}
+.lt_aside .user img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.lt_aside .user p{
+  width: 180px;
+  height: 40px;
+  font-size: 20px;
+  color: #fff;
+}
+/* nav */
+.lt_aside .nav li a {
+  display: block;
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  padding-left: 40px;
+  border-left: 3px solid transparent;
+}
+.lt_aside .nav li a.current{
+  background-color: #1D1F21;
+  border-left: 3px solid #006699;
+}
+.lt_aside .nav li a i{
+  margin-right: 5px;
+}
+.lt_aside .nav li .child {
+  display: none;
+}
+.lt_aside .nav li .child a {
+  padding-left: 60px;
+}
+
+/* main */
+.lt_main {
+  height: 1000px;
+  padding-left: 180px;
+  padding-top: 70px;
+  width: 100%;
+  transition: all 1s;
+}
+.lt_main.hidemenu{
+  padding-left: 0;
+}
+.lt_main .lt_topbar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-left: 180px;
+  width: 100%;
+  height: 50px;
+  background-color: #3C8DBC;
+  transition: all 1s;
+}
+.lt_topbar.hidemenu {
+  padding-left: 0px;
+}
+.lt_main .lt_topbar .icon_left, 
+.lt_main .lt_topbar .icon_right {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+.echarts_left,
+.echarts_right{
+  width: 48%;
+  height: 400px;
+}
+
+.red{
+  color:#B66160;
+}
