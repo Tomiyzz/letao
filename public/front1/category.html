@@ -26,45 +26,35 @@
   <div class="lt_main">
     <div class="lt_category_left">
       <div class="mui-scroll-wrapper">
-        <div class="mui_scroll">
+        <div class="mui-scroll">
           <ul>
-            <li><a href="#">运动馆</a></li>
-            <li><a href="#">运动馆</a></li>
-            <li><a href="#">运动馆</a></li>
-            <li><a href="#">运动馆</a></li>
-            <li><a href="#">运动馆</a></li>
-            <li><a href="#">运动馆</a></li>
-            <li><a href="#">运动馆</a></li>
-            <li><a href="#">运动馆</a></li>
-            <li><a href="#">运动馆</a></li>
+            <!-- 挖一个坑 -->
           </ul>
         </div>
       </div>
     </div>
-    <!-- <div class="lt_category_right">
+    <div class="lt_category_right">
       <div class="mui-scroll-wrapper">
         <div class="mui-scroll">
           <ul>
-            <li>
-              <img src="./images/brand1.png" alt="">
-              <p>耐克</p>
-            </li>
+            <!-- 挖一个坑 -->
+           
           </ul>
         </div>
       </div>
-    </div> -->
+    </div>
   </div>
 
   <div class="lt_footer">
     <ul>
       <li>
-        <a href="index.html" class="current">
+        <a href="index.html">
           <i class="fa fa-home"></i>
           <p>首页</p>
         </a>
       </li>
       <li>
-        <a href="category.html">
+        <a href="category.html" class="current">
           <i class="fa fa-bars"></i>
           <p>分类页</p>
         </a>
@@ -86,7 +76,34 @@
 </div>
 
 
+<script type="text/html" id="left_tpl">
+  {{ each rows v i }}
+    <li><a data-id="{{ v.id }}" class="{{ i === 0 ? 'current' : '' }}" href="#">{{ v.categoryName }}</a></li>
+  {{ /each }}
+</script>
+
+
+<script type="text/html" id="right_tpl">
+  {{ if rows.length === 0 }}
+  <p class="nomore">没有更多分类信息了</p>
+{{ else }}
+
+  {{ each rows v i }}
+  <li>
+    <a href="#">
+      <img src="{{ v.brandLogo }}" alt="">
+      <p>{{ v.brandName }}</p>
+    </a>
+  </li>
+  {{ /each }}
+
+{{ /if }}
+</script>
 <script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/common.js"></script>
 <script src="./js/category.js"></script>
+
 </body>
 </html>
