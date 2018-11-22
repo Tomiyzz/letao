@@ -16,3 +16,33 @@
 .lt_sort a span {
   margin-right: 3px;
 }
+.lt_search {
+  padding: 10px;
+  position: relative;
+}
+.lt_search .search_input {
+  height: 34px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.lt_search .search_btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 0 5px 5px 0;
+}
+.mui-clearfix {
+  padding: 10px;
+}
+.lt_product_item {
+  width: 48%;
+  float: left;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+.lt_product_item:nth-child(2n-1){
+  margin-right: 4%;
+}
+img{
+  width: 100%;
+}
